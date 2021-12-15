@@ -1,0 +1,139 @@
+apiVersion: v1
+entries:
+  cwf-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-12-15T05:50:25.05737156Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-orc8rlib-chart-161
+      version: 0.1.4
+    description: A Helm chart for magma orchestrator's cwf module
+    digest: 089d588e5f2a17143a3c2f36933b5f1a77ed02003e0a743f039f47d1917d5763
+    keywords:
+    - magma
+    - or8cr
+    - cwf-orc8r
+    name: cwf-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts-161-nms-cert-manager-dns-name/releases/download/cwf-orc8r-0.2.2/cwf-orc8r-0.2.2.tgz
+    version: 0.2.2
+  fbinternal-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-12-15T05:50:25.203167134Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-orc8rlib-chart-161
+      version: 0.1.4
+    description: A Helm chart for magma orchestrator's fbinternal module
+    digest: 36bf7c27cd3bf349c9fef5f35b6ac3d1162797b4cea56bd0acdc35f7f8318de6
+    keywords:
+    - magma
+    - or8cr
+    - fbinternal-orc8r
+    name: fbinternal-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts-161-nms-cert-manager-dns-name/releases/download/fbinternal-orc8r-0.2.2/fbinternal-orc8r-0.2.2.tgz
+    version: 0.2.2
+  feg-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-12-15T05:50:25.315207453Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-orc8rlib-chart-161
+      version: 0.1.4
+    description: A Helm chart for magma orchestrator's feg module
+    digest: 2837044c5aa9115b66aa6a5181a3e090b708859b226f103410a85aeb14a1266d
+    keywords:
+    - magma
+    - or8cr
+    - feg-orc8r
+    name: feg-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts-161-nms-cert-manager-dns-name/releases/download/feg-orc8r-0.2.5/feg-orc8r-0.2.5.tgz
+    version: 0.2.5
+  lte-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-12-15T05:50:25.437462118Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-orc8rlib-chart-161
+      version: 0.1.4
+    description: A Helm chart for magma orchestrator's lte module
+    digest: 5fe5320c3e40e2156e917166848b0e1590fdc39913c360693425f03035700dc9
+    keywords:
+    - magma
+    - or8cr
+    - lte-orc8r
+    name: lte-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts-161-nms-cert-manager-dns-name/releases/download/lte-orc8r-0.2.6/lte-orc8r-0.2.6.tgz
+    version: 0.2.6
+  orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-12-15T05:50:25.565672312Z"
+    dependencies:
+    - condition: certs.create
+      name: certs
+      repository: ""
+      version: 0.1.0
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.10
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.24
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.12
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-orc8rlib-chart-161
+      version: 0.1.4
+    description: Helm chart for the Magma Orchestrator
+    digest: 1265a5e81ba5712e5d5956781d07db9acb3ed5fce6a3750f6c0538d6db5d2698
+    home: https://www.magmacore.org
+    keywords:
+    - magma
+    - orc8r
+    name: orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts-161-nms-cert-manager-dns-name/releases/download/orc8r-1.5.24/orc8r-1.5.24.tgz
+    version: 1.5.24
+  secrets:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-12-15T05:50:25.69072859Z"
+    description: A Helm chart to create magma orchestrator secrets
+    digest: 38babf241a5eb742c77fb93b7935b62259ac6baa72bfd72269d29813df5c493a
+    keywords:
+    - magma
+    - orc8r
+    - secrets
+    name: secrets
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts-161-nms-cert-manager-dns-name/releases/download/secrets-0.1.10/secrets-0.1.10.tgz
+    version: 0.1.10
+generated: "2021-12-15T05:50:25.69073579Z"
